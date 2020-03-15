@@ -7,6 +7,9 @@ import Autocomplete from '../autocomplete';
 import './styles.css';
 
 function Page(props) {
+
+    const { text, suggestions, onChangeText, onChangeSelection } = props;
+
     return (
         <AppBar position="static">
             <Toolbar className="appbar">
@@ -15,10 +18,10 @@ function Page(props) {
                 </Typography>
 
                 <Autocomplete
-                    text={'react'}
-                    suggestions={[]}
-                    onChangeText={(text)=> {}}
-                    onChangeSelection={(text)=> {}}/>
+                    text={ text }
+                    suggestions={ suggestions }
+                    onChangeText={ onChangeText }
+                    onChangeSelection={ onChangeSelection }/>
 
                 <AccountCircle/>
             </Toolbar>

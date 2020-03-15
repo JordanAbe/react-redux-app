@@ -15,7 +15,7 @@ class Autocomplete extends Component {
     }
 
     render() {
-        const { suggestions, onChangeText, onChangeSelection, text } = this.props;
+        const { text, suggestions, onChangeText, onChangeSelection } = this.props;
         const { isOpen } = this.state;
 
         return (
@@ -49,6 +49,7 @@ class Autocomplete extends Component {
                     onKeyPress={(event) => {
                         if (event.key === 'Enter' && text) {
                             onChangeSelection(text);
+                            // this.setState({ isOpen: false });
                         }
                     }}
                 />

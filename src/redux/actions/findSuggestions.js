@@ -1,4 +1,4 @@
-const type = 'findSuggestions';
+export const type = 'findSuggestions';
 
 const findSuggestions = text => {
     return {

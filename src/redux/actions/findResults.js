@@ -1,4 +1,4 @@
-const type = 'findResults';
+export const type = 'findResults';
 
 const findResults = text => {
     return {

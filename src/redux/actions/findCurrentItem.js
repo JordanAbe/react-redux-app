@@ -1,4 +1,4 @@
-const type = 'findCurrentItem';
+export const type = 'findCurrentItem';
 
 const findCurrentItem = id => {
     return {
